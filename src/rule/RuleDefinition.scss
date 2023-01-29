@@ -1,0 +1,41 @@
+#rule-definition {
+  padding: 5px;;
+  .keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+    .key {
+      display: grid;
+      grid-template-areas:
+        "b c d"
+        ". e ."
+        ". a .";
+      gap: 1px;
+    }
+
+    .digit {
+      grid-area: a;
+      font-size: 9px;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .square{
+      grid-area: b;
+    }
+    
+    .square + .square {
+      grid-area: c;
+    }
+
+    .square +.square + .square {
+      grid-area: d;
+    }
+
+    .square +.square + .square + .square {
+      grid-area: e;
+    }
+  }
+}
