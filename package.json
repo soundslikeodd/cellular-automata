@@ -1,7 +1,7 @@
 {
   "name": "cellular-automata",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple one-dimensional cellular automata",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist && rm -rf node_modules",
@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "gh-pages": "npm run setup && npm run build && gh-pages -d dist -b gh-pages"
   },
-  "author": "",
+  "author": "matthew schaadt",
   "license": "ISC",
   "babel": {
     "presets": [
@@ -27,7 +27,9 @@
     ]
   },
   "dependencies": {
+    "@soundslikeodd/package-banner": "^1.3.0",
     "classnames": "^2.3.2",
+    "figlet": "^1.6.0",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
